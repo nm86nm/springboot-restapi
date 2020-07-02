@@ -9,11 +9,11 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/springboot-restapi")
-public class ComputerApi {
+public class ComputerController {
     private ComputerService computerService;
 
     @Autowired
-    public ComputerApi(ComputerService computerService) {
+    public ComputerController(ComputerService computerService) {
         this.computerService = computerService;
     }
 
